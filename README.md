@@ -1,6 +1,6 @@
 <h2>Review Aplikasi</h2>
 
-![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/review/Screenshot_4.jpg)
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/review/Screenshot_4.png)
 
 <h2>Konfigurasi Awal</h2>
 
