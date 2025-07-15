@@ -138,3 +138,5 @@ Pindai QR Code dengan ponsel Anda.
 Coba fitur generator dan pemeriksa nomor.
 
 Dengan mengikuti langkah-langkah ini, Anda seharusnya dapat menginstal dan menjalankan aplikasi Pemeriksa WhatsApp Anda di server Node.js lain.
+
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_6.jpg)
