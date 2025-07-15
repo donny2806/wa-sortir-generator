@@ -127,6 +127,8 @@ Setelah semua langkah di atas selesai:
 
 Akses frontend Anda melalui browser web menggunakan alamat IP atau nama domain server Anda (misalnya http://your_frontend_domain_or_ip).
 
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_5.jpg)
+
 Periksa konsol browser (F12) untuk melihat apakah ada kesalahan koneksi Socket.IO atau kesalahan lainnya.
 
 Periksa log backend Anda (dengan pm2 logs atau melihat output terminal jika Anda menjalankan node server.js secara langsung) untuk memastikan klien WhatsApp memulai dan menghasilkan QR Code.
