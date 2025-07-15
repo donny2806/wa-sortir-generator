@@ -63,13 +63,15 @@ server.listen(PORT, () => {
  
 Untuk penggunaan produksi, sangat disarankan untuk menggunakan manajer proses seperti PM2 agar aplikasi Anda tetap berjalan di latar belakang dan secara otomatis dimulai ulang jika terjadi crash atau restart server:
 
-# Instal PM2 secara global jika belum
+<h3>Khusus untuk penggunaan script otomatis (menjalankan script dengan pm, jika sudah menjalankan dengan node server.js maka tidak perlu)</h3>
+
+* Install pm2
 npm install -g pm2
 
-# Mulai aplikasi Anda dengan PM2
+* Mulai aplikasi Anda dengan PM2
 pm2 start server.js --name "whatsapp-checker-backend"
 
-# Simpan konfigurasi PM2 agar otomatis dimulai saat server reboot
+* Simpan konfigurasi PM2 agar otomatis dimulai saat server reboot
 pm2 save
 pm2 startup
 
@@ -78,7 +80,7 @@ Anda dapat melihat log dengan pm2 logs dan mengelola aplikasi dengan pm2 list, p
 Langkah 5: Sajikan Frontend (dan Konfigurasi Firewall)
 Frontend Anda adalah file HTML, CSS, dan JavaScript statis. Anda dapat menyajikannya dengan beberapa cara:
 
-Menggunakan Server Web (Nginx/Apache - Direkomendasikan):
+<h2>Menggunakan Server Web (Nginx/Apache - Direkomendasikan)</h2>
 Ini adalah cara paling umum dan efisien untuk menyajikan file statis.
 
 Nginx: Instal Nginx, lalu buat konfigurasi server block baru untuk mengarahkan ke direktori frontend Anda.
