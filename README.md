@@ -1,5 +1,6 @@
 <h2>Review Aplikasi</h2>
-![Gambar 1]((https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_4.jpg)
+![Gambar 1]()
+![Teks Alternatif Gambar]((https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_4.jpg)
 
 <h2>Konfigurasi Awal</h2>
 
