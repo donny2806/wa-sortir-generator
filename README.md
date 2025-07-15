@@ -146,5 +146,10 @@ Coba fitur generator dan pemeriksa nomor.
 
 Dengan mengikuti langkah-langkah ini, Anda seharusnya dapat menginstal dan menjalankan aplikasi Pemeriksa WhatsApp Anda di server Node.js lain.
 
-
+# Cara penggunaan / How to use
+* Masukkan deretan angka di form input nomor seperti gambar di bawah, anda bisa memilih untuk nomor telepon lokal khusus Indonesia atau nomor telepon internasional (pastikan anda sudah menautkan perangkat anda terlebih dahulu)
 ![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_6.jpg)
+
+* Setelah anda memasukkan opsi nomer silahkan tekan generate, maka angka akan di generate secara tersusun. Anda juga bisa mendownload deretan angka sebagai txt.
+
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_11.jpg)
