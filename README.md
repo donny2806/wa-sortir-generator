@@ -1,6 +1,6 @@
 <h2>Konfigurasi Awal</h2>
 
-* Server untuk program ini benggunakan dua yaitu PHP dan NodeJS. Pastikan anda memiliki php8.2 dan NodeJS terinstall di linux anda
+* Server untuk program ini menggunakan dua yaitu PHP dan NodeJS. Pastikan anda memiliki php8.2 dan NodeJS terinstall di linux anda
 * Untuk melakukan instalasi program letakkan program di /var/www/html/wa-sortir-generator
 * Instal requirement dengan menjalanakan
   - cd /path/to/your/server/directory # Contoh: /var/www/html/wa-sortir-generator
