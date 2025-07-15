@@ -56,6 +56,10 @@ server.listen(PORT, () => {
 
 * Jalankan Backends
   - node server.js
+
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_7.jpg)
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_8.jpg)
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_9.jpg)
  
 Untuk penggunaan produksi, sangat disarankan untuk menggunakan manajer proses seperti PM2 agar aplikasi Anda tetap berjalan di latar belakang dan secara otomatis dimulai ulang jika terjadi crash atau restart server:
 
