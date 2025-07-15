@@ -1,3 +1,6 @@
+<h2>Review Aplikasi</h2>
+![Gambar 1]((https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_4.jpg)
+
 <h2>Konfigurasi Awal</h2>
 
 * Server untuk program ini menggunakan dua yaitu PHP dan NodeJS. Pastikan anda memiliki php8.2 dan NodeJS terinstall di linux anda
