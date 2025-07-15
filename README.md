@@ -8,12 +8,12 @@
 * Untuk melakukan instalasi program letakkan program di /var/www/html/wa-sortir-generator
 * Instal requirement dengan menjalanakan
   - cd /path/to/your/server/directory # Contoh: /var/www/html/wa-sortir-generator
-  - npm install
+  - npm install (jika terjadi error, hapus package-lock.json lalu mulai npm install lagi)
 * Program ini membutuhkan pustaka node js seperti :
   - whatsapp-web.js, express, socket.io, qrcode-terminal dan cors.
 * install juga paket di whatsapp-backend.
   - cd whatsapp-backend
-  - npm install
+  - npm install (jika terjadi error, hapus package-lock.json lalu mulai npm install lagi)
 
 <h2>Konfigurasi backend</h2>
 * Buka file "server.js", lalu cari baris berikut :
