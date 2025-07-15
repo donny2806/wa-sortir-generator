@@ -133,6 +133,7 @@ Setelah semua langkah di atas selesai:
 
 Akses frontend Anda melalui browser web menggunakan alamat IP atau nama domain server Anda (misalnya http://your_frontend_domain_or_ip).
 
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_10.jpg)
 ![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_5.jpg)
 
 Periksa konsol browser (F12) untuk melihat apakah ada kesalahan koneksi Socket.IO atau kesalahan lainnya.
@@ -145,5 +146,5 @@ Coba fitur generator dan pemeriksa nomor.
 
 Dengan mengikuti langkah-langkah ini, Anda seharusnya dapat menginstal dan menjalankan aplikasi Pemeriksa WhatsApp Anda di server Node.js lain.
 
-![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_10.jpg)
+
 ![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_6.jpg)
