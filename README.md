@@ -148,8 +148,19 @@ Dengan mengikuti langkah-langkah ini, Anda seharusnya dapat menginstal dan menja
 
 # Cara penggunaan / How to use
 * Masukkan deretan angka di form input nomor seperti gambar di bawah, anda bisa memilih untuk nomor telepon lokal khusus Indonesia atau nomor telepon internasional (pastikan anda sudah menautkan perangkat anda terlebih dahulu)
+  
 ![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_6.jpg)
 
 * Setelah anda memasukkan opsi nomer silahkan tekan generate, maka angka akan di generate secara tersusun. Anda juga bisa mendownload deretan angka sebagai txt.
 
 ![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_11.jpg)
+
+* Paste nomor di text area untuk di sortir atau diperiksa oleh mesin
+
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_12.jpg)
+
+* Anda juga bisa memeriksa deretan / database nomor telepon yang anda miliki dengan forman tersusun vertikal ke bawah, alat secara otomatis membacanya sebagai baris baru.
+
+![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_13.jpg)
+
+Alat ini berguna untuk membantu promosi sebuah situs atau melakukan kampanye di daerah - daerah tertentu. Bisa digunakan sebagai alat strategis untuk menjalankan politik juga. Untuk penggunaan illegal diluar tanggung jawab saya, tool ini diciptakan sebagai edukasi dan alat bantu marketing semata.
