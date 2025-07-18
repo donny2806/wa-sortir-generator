@@ -18,6 +18,7 @@
 <h2>Konfigurasi backend</h2>
 * Buka file "server.js", lalu cari baris berikut :
 
+```
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -26,6 +27,7 @@ const io = new Server(server, {
         methods: ["GET", "POST"]
     }
 });
+```
 
 * Jika frontend dan backend berjalan di server yang SAMA: Anda bisa menggunakan http://localhost:3000 (jika port backend 3000) atau alamat IP server itu sendiri.
 * Jika frontend diakses dari domain/IP lain: Gunakan http://your_frontend_domain_or_ip atau * (untuk mengizinkan semua origin, tapi ini tidak direkomendasikan untuk produksi karena masalah keamanan CORS).
