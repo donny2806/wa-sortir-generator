@@ -2,6 +2,8 @@
 
 ![alt text](https://github.com/donny2806/wa-sortir-generator/blob/main/whatsapp-backend/Screenshot_4.jpg)
 
+Aplikasi ini menggunakan sistem generator angka secara berurutan, hanya perlu mengatur angka mulai dan angka akhir. Saat angka di generate oleh generator, selanjutnya tempel baris nomor pada box area pemeriksa ataupun anda bisa mendownloadnya sebagai txt, lalu upload dengan menekan choose file. Anda juga bisa memeriksa baris yang anda miliki dengan mengupload file txt milik anda.
+
 <h2>Konfigurasi Awal</h2>
 
 * Server untuk program ini menggunakan dua yaitu PHP dan NodeJS. Pastikan anda memiliki php8.1 atau lebih tinggi dan NodeJS terinstall di linux anda
