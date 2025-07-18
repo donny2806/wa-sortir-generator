@@ -23,7 +23,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "http://yourdomainoriphere.com", // <--- UBAH INI
+        origin: "http://yourdomainoriphere.com", // <--- Change This / Ubah ini
         methods: ["GET", "POST"]
     }
 });
@@ -34,11 +34,13 @@ const io = new Server(server, {
 
   Juga, perhatikan port yang digunakan backend:
 
+```
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
     console.log(`Server berjalan di http://localhost:${PORT}`);
     console.log('Menunggu koneksi WhatsApp...');
 });
+```
 
 * Secara default, ini adalah 3000. Pastikan port ini terbuka di firewall server Anda (lihat Langkah sebelumnya).
 
@@ -46,7 +48,9 @@ server.listen(PORT, () => {
 
 * Buka file html frontend anda, index.php :
 
-  - const backendUrl = 'http://192.168.100.107:3000'; // <--- UBAH INI DENGAN DOMAIN ATAU IP ANDA
+```
+  const backendUrl = 'http://192.168.100.107:3000'; // <--- Change it with your domain / IP
+```
 
 * Ubah http://192.168.100.107:3000 menjadi URL atau alamat IP publik dari server tempat backend Anda berjalan, diikuti dengan portnya.
 * Penting: Jika Anda menggunakan nama domain (misalnya api.example.com), gunakan itu: http://api.example.com:3000.
@@ -68,15 +72,22 @@ Untuk penggunaan produksi, sangat disarankan untuk menggunakan manajer proses se
 <h3>Khusus untuk penggunaan script otomatis (menjalankan script dengan pm, jika sudah menjalankan dengan node server.js maka tidak perlu)</h3>
 
 * Install pm2
+
+```
 npm install -g pm2
+```
 
 * Mulai aplikasi Anda dengan PM2
+
+```
 pm2 start server.js --name "whatsapp-checker-backend"
+```
 
 * Simpan konfigurasi PM2 agar otomatis dimulai saat server reboot
+```
 pm2 save
 pm2 startup
-
+```
 Anda dapat melihat log dengan pm2 logs dan mengelola aplikasi dengan pm2 list, pm2 stop <name>, pm2 restart <name>.
 
 Langkah 5: Sajikan Frontend (dan Konfigurasi Firewall)
@@ -88,6 +99,8 @@ Ini adalah cara paling umum dan efisien untuk menyajikan file statis.
 Nginx: Instal Nginx, lalu buat konfigurasi server block baru untuk mengarahkan ke direktori frontend Anda.
 
 # Contoh konfigurasi Nginx (biasanya di /etc/nginx/sites-available/your_domain.conf)
+
+```
 server {
     listen 80;
     server_name your_frontend_domain_or_ip; # Ganti dengan domain/IP frontend
@@ -99,6 +112,7 @@ server {
         try_files $uri $uri/ =404;
     }
 }
+```
 
 Setelah itu, aktifkan konfigurasi dan muat ulang Nginx.
 
@@ -107,11 +121,13 @@ Apache: Instal Apache dan konfigurasikan VirtualHost untuk mengarahkan ke direkt
 Menggunakan Server Node.js yang Sama (Kurang Direkomendasikan untuk Produksi):
 Anda bisa menambahkan Express.js di server.js untuk menyajikan file statis frontend:
 
+```
 // Di server.js, setelah app = express();
 app.use(express.static(path.join(__dirname, 'nama_folder_frontend_anda')));
 // Contoh: app.use(express.static(path.join(__dirname, 'public')));
 // Pastikan folder frontend Anda berada di satu level dengan server.js,
 // atau sesuaikan path.
+```
 
 Jika Anda melakukan ini, pastikan backendUrl di frontend menunjuk ke port yang sama dengan server Node.js (misalnya http://your_server_ip:3000).
 
@@ -119,17 +135,17 @@ Konfigurasi Firewall:
 Pastikan port yang digunakan oleh backend Node.js Anda (misalnya 3000) dan port yang digunakan oleh server web Anda (misalnya 80 untuk HTTP, 443 untuk HTTPS) terbuka di firewall server Anda.
 
 Untuk Ubuntu/Debian (UFW):
-
+```
 sudo ufw allow 3000/tcp # Untuk port backend
 sudo ufw allow 'Nginx HTTP' # Atau 'Apache' jika Anda menggunakannya
 sudo ufw enable
-
+```
 Untuk CentOS/RHEL (firewalld):
-
+```
 sudo firewall-cmd --permanent --add-port=3000/tcp
 sudo firewall-cmd --permanent --add-service=http # Atau https
 sudo firewall-cmd --reload
-
+```
 Pengujian
 Setelah semua langkah di atas selesai:
 
